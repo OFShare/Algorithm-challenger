@@ -12,7 +12,7 @@
 
    时间复杂度：O(n^2)
 
-2. 例题[POJ-3624](https://vjudge.net/problem/POJ-3624) ，AC[源码](./POJ-3624)
+2. 例题[POJ-3624](https://vjudge.net/problem/POJ-3624) ，AC[源码](./POJ-3624.cc)
 
    题意：给定N个小饰品，每个小饰品有重量W和渴望值D且最多选一个，问不超过重量M的情况下，最大的D是多少？
 
@@ -24,7 +24,7 @@
    
    时间复杂度：O(N*M)
    
-3. 例题[POJ-2229](https://vjudge.net/problem/POJ-2229)， AC[源码](./POJ-2229)
+3. 例题[POJ-2229](https://vjudge.net/problem/POJ-2229)， AC[源码](./POJ-2229.cc)
 
    题意：给定一个数字N，问由2的幂组成的和为N的由多少种。2的幂从小到大排序，即不重复计数。
 
@@ -52,7 +52,7 @@
 
    希望大家用类比的方式思考，理解。
 
-5. 例题[POJ-2385](https://vjudge.net/problem/POJ-2385)， AC[源码](./POJ-2385)
+5. 例题[POJ-2385](https://vjudge.net/problem/POJ-2385)， AC[源码](./POJ-2385.cc)
 
    题意：有两颗苹果数(标记为树0，树1)，每一秒钟从其中的一颗苹果树掉落一个苹果，你可以瞬间移动到一颗苹果树下，问当你第1秒钟站在苹果树0的下面，移动不差过W步时，T时间内最多能接到的苹果数量。
 
@@ -64,7 +64,7 @@
 
    时间复杂度：O(T*W)
 
-6. 例题[POJ-3616](https://vjudge.net/problem/POJ-3616)， AC[源码](./POJ-3616)
+6. 例题[POJ-3616](https://vjudge.net/problem/POJ-3616)， AC[源码](./POJ-3616.cc)
 
    题意：有M个时间区间，每个时间区间有个efficiency效率值。奶牛在某个时间区间工作后，必须休息R时间。问合理安排奶牛的工作，能获得最大多少效率值。
 
