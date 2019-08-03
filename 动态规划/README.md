@@ -127,15 +127,15 @@
    
    当a[i]<=j时，将上式右边展开得
    
-   dp[i][j] = dp[i-1][j] + dp[i-1][j-1] + ... + dp[i-1][j-a[i]] + d[i-1][j-a[i]]
+   <a href="https://www.codecogs.com/eqnedit.php?latex=dp[i][j]&space;=&space;dp[i-1][j]&space;&plus;&space;dp[i-1][j-1]&space;&plus;&space;...&space;&plus;&space;dp[i-1][j-a[i]]&space;&plus;&space;d[i-1][j-a[i]]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]&space;=&space;dp[i-1][j]&space;&plus;&space;dp[i-1][j-1]&space;&plus;&space;...&space;&plus;&space;dp[i-1][j-a[i]]&space;&plus;&space;d[i-1][j-a[i]]" title="dp[i][j] = dp[i-1][j] + dp[i-1][j-1] + ... + dp[i-1][j-a[i]] + d[i-1][j-a[i]]" /></a>
    
-   dp[i][j-1] = dp[i-1][j-1] + dp[i-1][j-2] + ... + dp[i-1][j-a[i]] + dp[i-1][j-a[i]-1] 
+   <a href="https://www.codecogs.com/eqnedit.php?latex=dp[i][j-1]&space;=&space;dp[i-1][j-1]&space;&plus;&space;dp[i-1][j-2]&space;&plus;&space;...&space;&plus;&space;dp[i-1][j-a[i]]&space;&plus;&space;dp[i-1][j-a[i]-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dp[i][j-1]&space;=&space;dp[i-1][j-1]&space;&plus;&space;dp[i-1][j-2]&space;&plus;&space;...&space;&plus;&space;dp[i-1][j-a[i]]&space;&plus;&space;dp[i-1][j-a[i]-1]" title="dp[i][j-1] = dp[i-1][j-1] + dp[i-1][j-2] + ... + dp[i-1][j-a[i]] + dp[i-1][j-a[i]-1]" /></a>   
    
-   所以dp[i][j] = dp[i-1][j] + dp[i][j-1] - dp[i-1][j-a[i]-1]
+   所以<a href="https://www.codecogs.com/eqnedit.php?latex=dp[i][j]&space;=&space;dp[i-1][j]&space;&plus;&space;dp[i][j-1]&space;-&space;dp[i-1][j-a[i]-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]&space;=&space;dp[i-1][j]&space;&plus;&space;dp[i][j-1]&space;-&space;dp[i-1][j-a[i]-1]" title="dp[i][j] = dp[i-1][j] + dp[i][j-1] - dp[i-1][j-a[i]-1]" /></a>
    
    当a[i]>j时，同理可得：
    
-   dp[i][j] = dp[i-1][j] + dp[i][j-1]
+   <a href="https://www.codecogs.com/eqnedit.php?latex=dp[i][j]&space;=&space;dp[i-1][j]&space;&plus;&space;dp[i][j-1]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]&space;=&space;dp[i-1][j]&space;&plus;&space;dp[i][j-1]" title="dp[i][j] = dp[i-1][j] + dp[i][j-1]" /></a>
    
    这样我们的dp方程就没有K这个变量，时间复杂度降为O(T*B)
    
