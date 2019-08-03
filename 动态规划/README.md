@@ -106,20 +106,11 @@
    如果我们换种定义方式，便可以优化到O(n*m)。现在我们定义dp\[i][j]为前i种硬币，组成和为j时，第i种最多还能剩下多少。如果前i种硬币不能组成和为j，则我们定义dp\[i][j] = -1。
 
    则状态的转移为，如果dp\[i-1][j]>=0，则dp\[i][j]显然为第i种本身的数量，如果dp\[i][j-A[i]]>=1，则dp\[i][j]为dp\[i][j-A[i]] - 1，其他情况dp\[i][j] = -1。
-$$
-dp[i][j]=\begin{cases}
-A\_cnt[i],\quad \quad \quad \quad dp[i-1][j]>=0 \\\\
-   dp[i][j-A[i]] - 1,\quad \quad dp[i][j-A[i]]>=1 \\\\
-   -1, \quad \quad \quad \quad \quad \quad \quad others
-   \end{cases}
-$$
+   注意dp\[i][j] = dp\[i][j-A[i]] - 1，相信大家看到这个式子脑袋里也会想到，dp\[i][j] = dp\[i][j-2*A[i]] - 2，dp\[i][j]= 		dp\[i][j-3\*A[i]] - 3，为什么其他状态不更新dp\[i][j]呢，只需要dp\[i][j-A[i]] 这个状态去更新dp\[i][j]呢？其实上面		的递推式，dp\[i][j-A[i]]会被dp\[i][j-2\*A[i]]更新，所以dp\[i][j-2\*A[i]] 这个状态就不需要去更新dp\[i][j]了。
 
+   另外这个题需要滚动数组的dp写法，不然会被卡内存。如果你不会滚动数组写法，你可以参考前面的例题2。		你也可以对比此题的滚动数组写法，和原生的[memoryExceeded](./POJ-1742-memoryExceeded.cc)写法。
 
-​		注意dp\[i][j] = dp\[i][j-A[i]] - 1，相信大家看到这个式子脑袋里也会想到，dp\[i][j] = dp\[i][j-2*A[i]] - 2，dp\[i][j]= 		dp\[i][j-3\*A[i]] - 3，为什么其他状态不更新dp\[i][j]呢，只需要dp\[i][j-A[i]] 这个状态去更新dp\[i][j]呢？其实上面		的递推式，dp\[i][j-A[i]]会被dp\[i][j-2\*A[i]]更新，所以dp\[i][j-2\*A[i]] 这个状态就不需要去更新dp\[i][j]了。
-
-   	 另外这个题需要滚动数组的dp写法，不然会被卡内存。如果你不会滚动数组写法，你可以参考前面的例题2。		你也可以对比此题的滚动数组写法，和原生的[memoryExceeded][POJ-1742-memoryExceeded.cc]写法。
-
-   	时间复杂度：O(n*m)
+   时间复杂度：O(n*m)
 
 9. 
 
