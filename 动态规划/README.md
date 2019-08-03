@@ -116,15 +116,11 @@
 9. 例题[POJ-3046](./POJ-3046.cc)， AC[源码](./POJ-3046.cc)
 
    题意：蚂蚁有T个家族，每个家族里的蚂蚁没有区别，总共有A只蚂蚁，现在问：给出每个家族的蚂蚁数量，最多能组合成多少个不同的，集合元素个数为S~B的集合？
-
    简单的说就是：就是给你T个集合，每个集合num[i]个数，这些数排列组合能有多少个，个数为S~B的集合。
-$$
-   y=\begin{cases}
--x,\quad x\leq 0 \\\\
-   x,\quad x>0
-\end{cases}
-   $$
-
+   
+   `题解`：因为github上的md不是很好插入数学公式，此题以后加，现在只给出AC代码。
+   
+   <a href="https://www.codecogs.com/eqnedit.php?latex=ax^{2}&space;&plus;&space;by^{2}&space;&plus;&space;c&space;=&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?ax^{2}&space;&plus;&space;by^{2}&space;&plus;&space;c&space;=&space;0" title="ax^{2} + by^{2} + c = 0" /></a>
    
 10. 
 
