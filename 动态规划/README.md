@@ -83,7 +83,7 @@
 
    时间复杂度：O(M*M)
 
-7.  例题[POJ-3666](https://vjudge.net/problem/POJ-3666)， AC[源码](./POJ-3666.cc)
+7. 例题[POJ-3666](https://vjudge.net/problem/POJ-3666)， AC[源码](./POJ-3666.cc)
 
    题意：给你Ｎ个数字，问将Ｎ个数字修改为单调序列的最小修改量。修改量的定义见题目描述。
 
