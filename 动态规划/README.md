@@ -2,6 +2,8 @@
 
 精选了一些dp例题，每道例题都给出ac代码，并详细讲解。量不在多，而在精。
 
+TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1**
+
 ---
 
 1. 例题[POJ-3176](https://vjudge.net/problem/POJ-3176) ，AC[源码](./POJ-3176.cc)
