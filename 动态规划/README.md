@@ -6,6 +6,8 @@ TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基�
 
 TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九章 动态规划例题**
 
+TODO [背包九讲](https://github.com/OFShare/pack) 
+
 ---
 
 1. 例题[POJ-3176](https://vjudge.net/problem/POJ-3176) ，AC[源码](./POJ-3176.cc)
