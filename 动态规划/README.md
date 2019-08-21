@@ -303,10 +303,13 @@ TODO [背包九讲](https://github.com/OFShare/pack)
 
     时间复杂度：见上个例题
 
-19. 例题[UVA-11400][https://vjudge.net/problem/UVA-11400]，AC[源码](./UVA-11400.cc)
+19. 例题[UVA-11400](https://vjudge.net/problem/UVA-11400)，AC[源码](./UVA-11400.cc)
 
-    题意：
-
+    题意：给定n种物品，每种物品由额定电压,电压源,费用,数量构成，大的额定电压可以替换小的以节约总的费用。问设计这个系统总的最小费用。本题题意不是很好理解，建议多看几遍。
+    
+    `题解`：参考我在洛谷上针对这题写的一篇[题解](https://www.luogu.org/space/show?uid=36078)
+    
+    时间复杂度：O(N^2)
 20. 
 
 21. 
