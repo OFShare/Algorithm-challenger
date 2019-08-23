@@ -2,11 +2,11 @@
 
 精选了一些dp例题，每道例题都给出ac代码，并详细讲解。量不在多，而在精。
 
-TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1**
+TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1** `6/19`
 
-TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九章 动态规划例题**
+TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九章 动态规划例题** `6/31`
 
-TODO [背包九讲](https://github.com/OFShare/pack) 
+~~TODO [背包九讲](https://github.com/OFShare/pack)~~
 
 ---
 
