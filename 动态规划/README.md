@@ -1,8 +1,8 @@
 ##### 动态规划讲解
 
-精选了一些dp例题，每道例题都给出ac代码，并详细讲解。量不在多，而在精。
+精选了一些dp例题，每道例题都给出ac代码，并详细讲解。量在于多，也在于精。
 
-TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1** `6/19`
+TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1** `10/19`
 
 TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九章 动态规划例题** `6/31`
 
@@ -323,7 +323,15 @@ TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九�
 
     时间复杂度：O(m*n)
 
-21. 
+21. ---
+
+    小结：经过前面20道比较经典的dp题，相信大家对dp已经有初步的认识了。现在可以试着去刷[kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1**，里面的绝大部分题都可以比较轻松的切了。当然也可以去找其他一些基础dp题如[洛谷普及-dp专题](https://www.luogu.org/problem/list?keyword=dp&difficulty=2&page=1)，巩固，熟悉以及加深对基础dp的理解。
+
+22. 
+
+23. 
+
+24. 
 
     
 
