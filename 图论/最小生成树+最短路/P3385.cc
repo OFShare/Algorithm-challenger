@@ -69,8 +69,10 @@ int main() {
         }
         int ret = Bellman_Ford(1);
         if (ret == 0) {
+            // 这里的输出, 是数字0, 不是字母o
             printf("N0\n");
         } else {
+            // 这里的输出, 是数字5, 不是字母s
             printf("YE5\n");
         }
     }
