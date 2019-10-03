@@ -6,6 +6,7 @@
 
 const int maxn = 2 * 2e5 + 5;
 // dis[i]: 表示从源点到结点i的最短距离
+// 注意dis数组是int类型时, 可以用std::memset, 当dis数组是double时, 记得用std::fill
 int n, m, s, dis[maxn], cnt;
 // vis[i]: 表示结点i是否已被标记(访问)过
 bool vis[maxn];
