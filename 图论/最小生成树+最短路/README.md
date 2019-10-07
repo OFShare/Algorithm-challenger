@@ -264,4 +264,4 @@
 
 22. ---
 
-    小结: 从前面的一系列最短路题目中(绝大部分来自**[kuangbin专题四-最短路练习](https://vjudge.net/article/752)**), 我们可以发现, 这些题都只是将经典的最短路**Dijkstra**, **Bellman_Ford**, **Floyd**改写而已. 其中判断是否有负环我们可以用Bellman_Ford和Floyd(数据量较小), 常见的建反向图技巧, 改写定义, 或多定义一些变量, 维护相关东西.
+    小结: 从前面的一系列最短路题目中(绝大部分来自[kuangbin专题四-最短路练习](https://vjudge.net/article/752)), 我们可以发现, 这些题都只是将经典的最短路**Dijkstra**, **Bellman_Ford**, **Floyd**改写而已. 其中判断是否有负环我们可以用Bellman_Ford和Floyd(数据量较小), 常见的建反向图技巧, 改写定义, 或多定义一些变量, 维护相关东西.
