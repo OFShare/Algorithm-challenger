@@ -669,7 +669,7 @@ TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九�
 
     题意: **求树的直径**
 
-    `题解`: 用两种经典的求法.
+    `题解`: 有两种经典的求法.
 
     第一种: 任选树上的一个结点, dfs走到最远的一个结点记为u, 再从结点u dfs一次走到最远的一个结点记为v, 那么u-v便是树的直径. [实现一](./51Nod-2602-dfs.cc)
 
@@ -699,37 +699,9 @@ TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九�
 
     题意: 给定一颗树, 每个结点要么是服务器要么是客户端, 不过与客户端相邻的结点有且只有一个服务器. 问最少的服务器结点.
 
-    `题解`: 
+    `题解`: 参考我为洛谷写的这篇[题解](https://www.luogu.org/blog/user36078/solution-uva1218)
+
+    时间复杂度: O(N)
 
 52. 
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
-
-
-
 
