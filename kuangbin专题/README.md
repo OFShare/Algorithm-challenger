@@ -1,3 +1,7 @@
-##### TODO(2019-10-02): 计划刷掉kuangbin的所有专题 
+##### TODO: 2020年计划刷掉kuangbin的所有专题 
 
 https://vjudge.net/article/752
+
+**Done**:
+
+- ~~专题六 最小生成树~~
