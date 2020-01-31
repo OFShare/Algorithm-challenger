@@ -57,8 +57,8 @@ char tmp[maxn];
 
 int main() {
 #ifdef Acui
-	freopen("data.in", "r", stdin);
-	freopen("data.out", "w", stdout);
+  freopen("data.in", "r", stdin);
+  freopen("data.out", "w", stdout);
 #endif
 
 	while (fgets(tmp, maxn - 1, stdin)) {
