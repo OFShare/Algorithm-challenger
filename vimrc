@@ -1,4 +1,6 @@
 "/*
+"/*
+"/*
 " * Author        : OFShare
 " * E-mail        : OFShare@outlook.com
 " * Created Time  : 2020-01-31 09:44:38 AM
@@ -59,6 +61,14 @@ func SetTitle()
   let l = l + 1 | call setline(l, ' * File Name     : '.expand('%'))
   let l = l + 1 | call setline(l, ' */')
   let l = l + 1 | call setline(l, '')
+  let l = l + 1 | call setline(l, '#include <bits/stdc++.h>')
+  let l = l + 1 | call setline(l, '')
+  let l = l + 1 | call setline(l, 'void debug() {')
+  let l = l + 1 | call setline(l, '  #ifdef Acui')
+  let l = l + 1 | call setline(l, '    freopen("data.in", "r", stdin);')
+  let l = l + 1 | call setline(l, '    freopen("data.out", "w", stdout);')
+  let l = l + 1 | call setline(l, '  #endif')
+  let l = l + 1 | call setline(l, '}')
 endfunc
 
 "调试好以后<Ctrl-A>复制代码到粘贴板, 提交
@@ -68,6 +78,6 @@ map <C-A> ggVG"+y
 map <C-E> :call Run()<CR>
 func! Run()
   exec "w"
-  exec "!g++ -Wall -std=c++11 % -o %<"
+  exec "!g++ -Wall -std=c++11 -DAcui % -o %<"
   exec "!./%<"
 endfunc
