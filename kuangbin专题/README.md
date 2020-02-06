@@ -4,4 +4,7 @@ https://vjudge.net/article/752
 
 **Done**:
 
+- ~~专题一 简单搜索~~
+
 - ~~专题六 最小生成树~~
+
