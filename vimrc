@@ -78,6 +78,8 @@ map <C-A> ggVG"+y
 map <C-E> :call Run()<CR>
 func! Run()
   exec "w"
-  exec "!g++ -Wall -std=c++11 -DAcui % -o %<"
-  exec "!./%<"
+"  exec "!g++ -Wall -std=c++11 -DAcui % -o %<"
+"  exec "!./%<"
+  exec "!g++ -Wall -std=c++11 -DAcui % -o a.out"
+  exec "!./a.out"
 endfunc
