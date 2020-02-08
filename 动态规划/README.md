@@ -2,7 +2,7 @@
 
 精选了一些dp例题，每道例题都给出ac代码，并详细讲解。量在于多，也在于精。
 
-TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1** `10/19`
+~~TODO [kuangbin带你飞](https://cn.vjudge.net/article/187) **专题十二 基础DP1** `19/19`~~
 
 TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九章 动态规划例题** `6/31`
 
@@ -775,6 +775,50 @@ TODO [紫书](https://github.com/OFShare/aoapc-bac2nd/tree/master/ch9) **第九�
 
     小结: 例题55, 例题53等这类dp, 题目所求的答案, 都是在dp数组的**下标里**(即大家口中说的**改变dp的对象**), 而不是常见的dp数组本身. 
 
-56. 
+56. 例题[HDU-1160](https://vjudge.net/problem/HDU-1160), AC[源码](./HDU-1160.cc)
 
-    
+    排序后dp
+
+57. 例题[HDU-1078](https://vjudge.net/problem/HDU-1078), AC[源码](./HDU-1078.cc)
+
+    记忆化搜索
+
+58. 例题[HDU-1257](https://vjudge.net/problem/HDU-1257), AC[源码](./HDU-1257.cc)
+
+    最长上升子序列
+
+59. 例题[HDU-1260](https://vjudge.net/problem/HDU-1260), AC[源码](./HDU-1260.cc)
+
+    从前往后决策dp
+
+60. 例题[HDU-2859](https://vjudge.net/problem/HDU-2859), AC[源码](./HDU-2859.cc)
+
+    坐标类dp
+
+61. 例题[POJ-1015](https://vjudge.net/problem/POJ-1015), AC[源码](./POJ-1015.cc)
+
+    背包类dp, 较难. dp数组下标有负数时, 偏移量技巧
+
+62. 例题[POJ-1065](https://vjudge.net/problem/POJ-1065), AC[源码](./POJ-1065.cc)
+
+63. 例题[POJ-1458](https://vjudge.net/problem/POJ-1458), AC[源码](./POJ-1458.cc)
+
+    最长公共子序列
+
+64. 例题[POJ-1661](https://vjudge.net/problem/POJ-1661), AC[源码](./POJ-1661.cc)
+
+    看起来很难, 从到达的终点开始dp回去
+
+65. 例题[POJ-3181](https://vjudge.net/problem/POJ-3181), AC[源码](./POJ-3181.cc)
+
+66. 例题[POJ-3186](https://vjudge.net/problem/POJ-3186), AC[源码](./POJ-3186.cc)
+
+    一开始写的dp, [tle](./POJ-3186-tle.cc). 然后优化, 发现k不需要保存, 可由i和j推算出来.
+
+67. 例题[POJ-3280](https://vjudge.net/problem/POJ-3280), AC[源码](./POJ-3280.cc)
+
+68. 例题[POJ-3783](https://vjudge.net/problem/POJ-3783), AC[源码](./POJ-3783.cc)
+
+    经典的鸡蛋下落问题
+
+69. 
