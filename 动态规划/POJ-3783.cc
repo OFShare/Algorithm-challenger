@@ -12,6 +12,9 @@ const int maxn = 1e3 + 5;
 int P;
 
 int dp[maxn][maxn];
+// dp[i][j]: 有i个球, j层楼, 为了确定球的硬度, (在最坏情况下选择最优策略时)最少需要实验的次数.
+// (在最坏情况下选择最优策略时): 即代码里的里面取max, 最外层取min.
+// 决策是在那一层丟小球做实验, 转移是小球破与不破
 int dfs(int ball, int building) {
   if (dp[ball][building] != -1)
     return dp[ball][building];
