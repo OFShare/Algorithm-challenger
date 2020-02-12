@@ -49,8 +49,19 @@ inoremap ( ()<ESC>i
 inoremap ) <right>
 inoremap [ []<ESC>i
 inoremap ] <right>
-inoremap { {<CR>}<ESC>O
+"inoremap { {<CR>}<ESC>O
 
+"大括号自动补全并缩进,方法1. 按 '{ + 回车' , 方法2. '} + 回车'
+imap {<CR> {<CR>}<ESC>O
+imap }<CR> <CR>}<ESC>O
+"中括号的效果同上
+"imap [<CR> [<CR>]<ESC>O
+"imap ]<CR> <CR>]<ESC>O
+"小括号的效果同上
+"imap (<CR> (<CR>)<ESC>O
+"imap )<CR> <CR>)<ESC>O
+
+"添加自定义的信息, 如作者, 日期等
 map <C-D> :call SetTitle()<CR>
 func SetTitle()
   let l = 0
