@@ -21,7 +21,7 @@
 
    我们只要推出这三个整除就很好证明了`d |a`, `d | b`, `d | a % b`
 
-   设a和b的公约数为d, 数学符号记为d = (a, b)
+   设a和b的公约数为d, 数学符号记为d = (a, b).
 
    所以d | a, d | b
 
@@ -85,7 +85,7 @@
    // 递归函数输入a, b算出: d, x, y
    void exgcd(long long a, long long b, long long &d, long long &x, long long &y) {
    	if (b == 0) {
-    		d = a;
+    	   d = a;
            x = 1;
            y = 0;
            return ;
