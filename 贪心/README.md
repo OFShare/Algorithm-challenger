@@ -90,3 +90,35 @@
 
 以上便是经典的入门贪心.
 
+9. 例题[POJ-1456](https://vjudge.net/problem/POJ-1456), 参考[代码](./POJ-1456.cc)
+
+   本题是非常经典的贪心题, 我这里用了3种解法(一题多解)
+
+   解法一: 优先考虑利润大的, 从它的截止日益往前面推. [见这](./POJ-1456.cc)
+
+   解法二: 按截止日期排序, 依次考虑最先截止的物品. [见这](./POJ-1456-solution2.cc)
+
+   解法三: 是对解法一的优化, 可以用并查集快速找到第一个不冲突的点. [见这](https://github.com/OFShare/Algorithm-challenger/blob/master/kuangbin%E4%B8%93%E9%A2%98/%E4%B8%93%E9%A2%98%E4%BA%94_%E5%B9%B6%E6%9F%A5%E9%9B%86/POJ-1456.cc)
+
+   因为贪心题, 经常和优先队列结合, 这里简单的总结一下**优先队列的写法**:
+
+   ```
+   struct node {                                                                           int profit, deadline;
+     bool operator<(const node &rhs) const {
+       return deadline < rhs.deadline;
+     }
+     bool operator>(const node &rhs) const {
+       return profit > rhs.profit; 
+     }
+   };
+   
+   // 自定义的优先队列
+   // std::greater: 要重载operator>
+   // std::less: 要重载operator<
+   // 大顶堆是最大的元素在top
+   // 小顶堆是最小的元素在top
+   std::priority_queue<node, std::vector<node>, std::greater<node> > que;
+   std::priority_queue<node, std::vector<node>, std::less<node> > que
+   ```
+
+10. 
