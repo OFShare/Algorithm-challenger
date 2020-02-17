@@ -85,7 +85,7 @@
    // 递归函数输入a, b算出: d, x, y
    void exgcd(long long a, long long b, long long &d, long long &x, long long &y) {
    	if (b == 0) {
-    	   d = a;
+           d = a;
            x = 1;
            y = 0;
            return ;
