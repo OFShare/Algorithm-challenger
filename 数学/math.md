@@ -9,13 +9,54 @@
 这里推荐我认为讲的不错的一些视频资料
 
 1. [初等数论](https://www.bilibili.com/video/av23752897/), 内容是高中选修的初等数论初步, 很适合刚刚接触数论的萌新(QAQ)
+
 2. [抽象代数](https://www.bilibili.com/video/av22685954), 了解群的概念, 可惜up主不更了.
+
 3. [算法竞赛之数学基础](https://www.bilibili.com/video/av71378144?p=1)
+
 4. [组合数学](https://www.bilibili.com/video/av22736338?p=23), 熟悉常见的排列组合, 更有母函数清晰的讲解
 
----
+   ---
 
-1. `欧几里得和扩展欧几里得的证明`
+1. `同余性质`
+
+   传递性:
+
+   ​             a ≡ b (mod m), b ≡ c (mod m)
+
+   ​       则, a ≡ c (mod m)
+
+   线性运算:
+
+   ​             a ≡ b (mod m)
+
+   ​             c ≡ d (mod m)
+
+   ​       则, a ± c ≡ b ± d (mod m) 
+
+   ​             a * c ≡ b * d (mod m)
+
+   除法:
+
+   ​             a * c ≡ b * c (mod m) c≠0
+
+   ​       则, a ≡ b (mod m / gcd(c,m))  
+
+   ​       若c和m互素, a ≡ b (mod m)
+
+   幂运算:
+
+   ​          	a ≡ b (mod m)
+
+   ​        则, a ^ n ≡ b ^ n (mod m)
+
+   另外两个常见的:
+
+   ​        若a ≡ b (mod m)，n|m,则 a ≡ b (mod n) 
+
+   ​        若a ≡ b (mod mi) (i=1,2…n) 则 a ≡ b (mod [m1,m2,…mn]) 其中[m1,m2,…mn]表示m1,m2,…mn的最小公倍数
+
+2. `欧几里得和扩展欧几里得的证明`
 
    proof: gcd(a, b) == gcd(b, a % b)
 
@@ -98,4 +139,60 @@
    }
    ```
 
-   
+3. `费马小定理`
+
+   a ^ p ≡ a (mod p), p是一个素数
+
+   如果a和p互素, 根据同余的除法性质, 则:
+
+   a ^ (p - 1) ≡ 1 (mod p), 这个公式可以很好的求逆元:
+
+   a * a ^ (p - 2) ≡ 1 (mod p), 则a和a ^ (p - 2)互为逆元
+
+4. `中国剩余定理(孙子定理)`
+
+   x ≡ a1 (mod m1)
+
+   x ≡ a2 (mod m2)
+
+   x ≡ a3 (mod m3)
+
+   ​       .
+
+   ​       .
+
+   ​       .
+
+   x ≡ ak (mod mk)
+
+   m1, m2, m3, ..., mk两两互素, M = m1 * m2 * m3 * ... * mk
+
+   我们可以构造解:
+
+   X = (a1 * M1 * y1 + a2 * M2 * y2 + ... + ak * Mk * yk) % M
+
+   其中: Mi * yi ≡ 1 (mod mi), Mi = M / mi
+
+   当我们求得X为同余方程的解时, 即满足上面的所有约束条件, 那么显然:
+
+   X + M, X + 2 * M, X + k * M 都是解, 那么**最小的大于等于零解**, 就是:
+
+   (X % M + M) % M
+
+   这里说点题外话: **一个数取模, 如a % b, 类似于做减法, 把a里面所有包含b的倍数的数给减去, 所以要求最小的>=0的整数, 就是(a % b + b) % b**
+
+   最后, 因为这是k个方程, 我们可以暴力的枚举每个x, 然后看它是否符合约束. 这里有个优化, x可以跳着加.
+
+5. `欧拉定理`
+
+   ​    a ^ φ(n) ≡ 1 (mod n), 正整数a, n互质
+
+   φ(n) 是欧拉函数: 小于或等于n的正整数中与n[互质](https://baike.baidu.com/item/互质/577412)的数的数目, φ(1) = 1
+
+   通式：
+
+   ![img](https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/pic/item/f3d3572c11dfa9ecf6f6c0dd68d0f703908fc124.jpg)
+
+    (其中p1, p2……pn为x的所有质因数，x是不为0的整数)
+
+6. 
