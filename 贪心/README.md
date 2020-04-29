@@ -103,7 +103,8 @@
    因为贪心题, 经常和优先队列结合, 这里简单的总结一下**优先队列的写法**:
 
    ```
-   struct node {                                                                           int profit, deadline;
+   struct node {
+     int profit, deadline;
      bool operator<(const node &rhs) const {
        return deadline < rhs.deadline;
      }
