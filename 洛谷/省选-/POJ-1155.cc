@@ -1,11 +1,16 @@
 /*
  * Author        : OFShare
  * E-mail        : OFShare@outlook.com
- * Created Time  : 2020-05-15 16:36:45 PM
- * File Name     : P1273.cc
+ * Created Time  : 2020-05-15 22:42:13 PM
+ * File Name     : POJ-1155.cc
  */
 
-#include <bits/stdc++.h>
+//#include <bits/stdc++.h>
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+#include <cstring>
+#include <string>
 
 #define ll long long
 void debug() {
